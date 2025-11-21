@@ -7,3 +7,5 @@ server/obj/
 server/bin/
 server/.vs/
 web/.vs-code
+
+AGENTS.md
