@@ -1,0 +1,9 @@
+.vs/
+.vs-code/
+
+*.sln
+
+server/obj/
+server/bin/
+server/.vs/
+web/.vs-code
