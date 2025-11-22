@@ -201,8 +201,6 @@ html {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
     border: 1px solid #e9ecef;
-    opacity: 0;
-    transform: translateY(80px);
 }
 
 .subject-card:hover {

@@ -77,22 +77,19 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: 'power3.out'
     });
 
-    // Subject cards stagger animation
-    gsap.to('.subject-card', {
-        scrollTrigger: {
-            trigger: '.subjects-grid',
-            start: 'top 75%',
-            end: 'top 30%',
-            toggleActions: 'play none none reverse',
-        },
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        stagger: {
-            amount: 0.6,
-            from: 'start'
-        },
-        ease: 'power3.out'
+    // Subject cards animation
+    gsap.utils.toArray('.subject-card').forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: 'top 90%',
+                toggleActions: 'play none none none'
+            },
+            opacity: 0,
+            y: 40,
+            duration: 0.8,
+            ease: 'power3.out',
+        });
     });
 
     // Navbar background change on scroll
